@@ -1,0 +1,32 @@
+import { defineConfig } from "@playwright/test";
+ 
+export default defineConfig({
+    testDir: 'src/tests/',
+    fullyParallel:true,
+    workers:2,
+    reporter:[["html"]],
+    use:{
+        headless:true,
+        // browserName:"chromium"
+        browserName:"firefox"
+    }
+ 
+})
+
+
+
+
+// import { defineConfig } from "@playwright/test";
+
+// export default defineConfig({
+//     testDir: 'src/tests/',
+//     fullyParallel:true,
+//     workers:4,
+//     use:{
+//         headless:true,
+//         //browserName:"chromium"
+//                 browserName:"firefox"
+
+//     }
+
+// })
